@@ -1,7 +1,7 @@
 {
-  "name": "@ORGANIZATION/PROJECT-backend",
+  "name": "@austinibele/cms-backend-backend",
   "version": "0.0.0",
-  "description": "Backend for PROJECT",
+  "description": "Backend for cms-backend",
   "scripts": {
     "test": "node bin/test",
     "test:update": "node bin/test/manual/update",
@@ -33,14 +33,14 @@
     "revert": "node lib/executable/revert",
     "update": "node lib/executable/update",
     "--------------------------PM2--------------------------": "",
-    "pm2:start": "pm2 start lib/executable/server.js -i 0 --name PROJECT-backend-server --wait-ready --listen-timeout 120000 --kill-timeout 15000 --",
-    "pm2:start:local": "pm2 start lib/executable/server.js -i 2 --name PROJECT-backend-server --wait-ready --listen-timeout 120000 --kill-timeout 15000 -- local",
-    "pm2:start:updator:master": "pm2 start --name PROJECT-backend-updator-master lib/executable/updator-master.js",
-    "pm2:start:updator:slave": "pm2 start --name PROJECT-backend-updator-slave lib/executable/updator-slave.js",
-    "pm2:start:reload": "pm2 reload PROJECT-backend-server",
-    "pm2:stop": "pm2 delete PROJECT-backend-server",
-    "pm2:stop:updator:master": "pm2 delete PROJECT-backend-updator-master",
-    "pm2:stop:updator:slave": "pm2 delete PROJECT-backend-updator-slave"
+    "pm2:start": "pm2 start lib/executable/server.js -i 0 --name cms-backend-backend-server --wait-ready --listen-timeout 120000 --kill-timeout 15000 --",
+    "pm2:start:local": "pm2 start lib/executable/server.js -i 2 --name cms-backend-backend-server --wait-ready --listen-timeout 120000 --kill-timeout 15000 -- local",
+    "pm2:start:updator:master": "pm2 start --name cms-backend-backend-updator-master lib/executable/updator-master.js",
+    "pm2:start:updator:slave": "pm2 start --name cms-backend-backend-updator-slave lib/executable/updator-slave.js",
+    "pm2:start:reload": "pm2 reload cms-backend-backend-server",
+    "pm2:stop": "pm2 delete cms-backend-backend-server",
+    "pm2:stop:updator:master": "pm2 delete cms-backend-backend-updator-master",
+    "pm2:stop:updator:slave": "pm2 delete cms-backend-backend-updator-slave"
   },
   "repository": {
     "type": "git",

@@ -1,9 +1,9 @@
 import { Prisma } from "@prisma/client";
 import { v4 } from "uuid";
 
-import { IBbsArticle } from "@ORGANIZATION/PROJECT-api/lib/structures/common/IBbsArticle";
-import { IBbsArticleComment } from "@ORGANIZATION/PROJECT-api/lib/structures/common/IBbsArticleComment";
-import { IPage } from "@ORGANIZATION/PROJECT-api/lib/structures/common/IPage";
+import { IBbsArticle } from "@austinibele/cms-backend-api/lib/structures/common/IBbsArticle";
+import { IBbsArticleComment } from "@austinibele/cms-backend-api/lib/structures/common/IBbsArticleComment";
+import { IPage } from "@austinibele/cms-backend-api/lib/structures/common/IPage";
 
 import { MyGlobal } from "../../MyGlobal";
 import { PaginationUtil } from "../../utils/PaginationUtil";

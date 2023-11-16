@@ -2,8 +2,8 @@ import { MutexConnector, RemoteMutex } from "mutex-server";
 import { Promisive } from "tgrid/typings/Promisive";
 import { UniqueLock } from "tstl/thread/UniqueLock";
 
-import api from "@ORGANIZATION/PROJECT-api";
-import { ISystem } from "@ORGANIZATION/PROJECT-api/lib/structures/monitors/ISystem";
+import api from "@austinibele/cms-backend-api";
+import { ISystem } from "@austinibele/cms-backend-api/lib/structures/monitors/ISystem";
 
 import { MyConfiguration } from "../MyConfiguration";
 import { MyGlobal } from "../MyGlobal";

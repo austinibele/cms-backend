@@ -1,8 +1,8 @@
 import { Prisma } from "@prisma/client";
 import { v4 } from "uuid";
 
-import { IBbsArticleComment } from "@ORGANIZATION/PROJECT-api/lib/structures/common/IBbsArticleComment";
-import { IEntity } from "@ORGANIZATION/PROJECT-api/lib/structures/common/IEntity";
+import { IBbsArticleComment } from "@austinibele/cms-backend-api/lib/structures/common/IBbsArticleComment";
+import { IEntity } from "@austinibele/cms-backend-api/lib/structures/common/IEntity";
 
 import { MyGlobal } from "../../MyGlobal";
 import { AttachmentFileProvider } from "./AttachmentFileProvider";

@@ -1,7 +1,7 @@
 import { ArrayUtil } from "@nestia/e2e";
 import { sleep_for } from "tstl/thread/global";
 
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@austinibele/cms-backend-api";
 
 import { MyConfiguration } from "../../src/MyConfiguration";
 import { Terminal } from "../../src/utils/Terminal";

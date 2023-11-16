@@ -3,7 +3,7 @@ import git from "git-last-commit";
 import { randint } from "tstl/algorithm/random";
 import { Singleton } from "tstl/thread/Singleton";
 
-import { ISystem } from "@ORGANIZATION/PROJECT-api/lib/structures/monitors/ISystem";
+import { ISystem } from "@austinibele/cms-backend-api/lib/structures/monitors/ISystem";
 
 import { MyConfiguration } from "../../MyConfiguration";
 import { DateUtil } from "../../utils/DateUtil";

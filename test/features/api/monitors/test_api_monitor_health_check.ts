@@ -1,4 +1,4 @@
-import api from "@ORGANIZATION/PROJECT-api";
+import api from "@austinibele/cms-backend-api";
 
 export async function test_api_monitor_health_check(
   connection: api.IConnection,

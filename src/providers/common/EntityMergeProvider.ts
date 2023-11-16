@@ -1,6 +1,6 @@
 import { Prisma } from "@prisma/client";
 
-import { IRecordMerge } from "@ORGANIZATION/PROJECT-api/lib/structures/common/IRecordMerge";
+import { IRecordMerge } from "@austinibele/cms-backend-api/lib/structures/common/IRecordMerge";
 
 import { MyGlobal } from "../../MyGlobal";
 import { EntityUtil } from "../../utils/EntityUtil";

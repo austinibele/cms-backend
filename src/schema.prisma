@@ -10,7 +10,7 @@ generator client {
 
 generator markdown {
     provider = "prisma-markdown"
-    title    = "PROJECT"
+    title    = "cms-backend"
     output   = "../docs/ERD.md"
 }
 
