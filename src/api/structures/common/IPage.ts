@@ -6,7 +6,7 @@ import { tags } from "typia";
  * Collection of records with pagination indformation.
  *
  * @template T Record type
- * @author Samchon
+ * @author Austinibele
  */
 export interface IPage<T extends object> {
   /**

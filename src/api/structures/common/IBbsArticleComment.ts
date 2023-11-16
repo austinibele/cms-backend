@@ -16,7 +16,7 @@ import { IPage } from "./IPage";
  * Also, `IBbsArticleComment` is expressing the relationship of the hierarchical reply
  * structure through the {@link IBbsArticleComment.parent_id} attribute.
  *
- * @author Samchon
+ * @author Austinibele
  */
 export interface IBbsArticleComment<
   Snapshot extends IBbsArticleComment.ISnapshot = IBbsArticleComment.ISnapshot,

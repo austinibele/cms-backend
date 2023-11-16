@@ -5,7 +5,7 @@ import { IDiagnosis } from "../../structures/common/IDiagnosis";
  *
  * Finds every duplicated elements.
  *
- * @author Samchon
+ * @author Austinibele
  */
 export namespace UniqueDiagnoser {
   /**

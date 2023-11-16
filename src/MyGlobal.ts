@@ -10,7 +10,7 @@ import { MyConfiguration } from "./MyConfiguration";
 /**
  * Global variables of the server.
  *
- * @author Samchon
+ * @author Austinibele
  */
 export class MyGlobal {
   public static testing: boolean = false;

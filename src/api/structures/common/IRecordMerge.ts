@@ -18,7 +18,7 @@ import { tags } from "typia";
  * Such recursive merge process still works for self-recursive
  * (tree-structured) tables.
  *
- * @author Samchon
+ * @author Austinibele
  */
 export interface IRecordMerge {
   /**

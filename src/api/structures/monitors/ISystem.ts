@@ -1,7 +1,7 @@
 /**
  * System Information.
  *
- * @author Samchon
+ * @author Austinibele
  */
 export interface ISystem {
   /**

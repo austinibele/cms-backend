@@ -25,7 +25,7 @@ import { IPage } from "./IPage";
  * In other words, to keep evidence, and prevent fraud.
  *
  * @template Snapshot Snapshot content type of the article
- * @author Samchon
+ * @author Austinibele
  */
 export interface IBbsArticle<
   Snapshot extends IBbsArticle.ISnapshot = IBbsArticle.ISnapshot,

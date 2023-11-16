@@ -25,7 +25,7 @@ generator markdown {
 /// `.gitignore` or `README` case, but not possible to omit both of them.
 ///
 /// @namespace Articles
-/// @author Samchon
+/// @author Austinibele
 model attachment_files {
     //----
     // COLUMNS
@@ -89,7 +89,7 @@ model attachment_files {
 ///
 /// @namespace Articles
 /// @erd Inquiries
-/// @author Samchon
+/// @author Austinibele
 model bbs_articles {
     /// @format uuid
     id String @id @db.Uuid
@@ -131,7 +131,7 @@ model bbs_articles {
 ///
 /// @namespace Articles
 /// @erd Inquiries
-/// @author Samchon
+/// @author Austinibele
 model bbs_article_snapshots {
     //----
     // COLUMNS
@@ -186,7 +186,7 @@ model bbs_article_snapshots {
 /// see in this documents.
 ///
 /// @namespace Articles
-/// @author Samchon
+/// @author Austinibele
 model bbs_article_snapshot_files {
     //----
     // COLUMNS
@@ -238,7 +238,7 @@ model bbs_article_snapshot_files {
 ///
 /// @namespace Articles
 /// @erd Inquiries
-/// @author Samchon
+/// @author Austinibele
 model bbs_article_comments {
     //----
     // COLUMNS
@@ -303,7 +303,7 @@ model bbs_article_comments {
 /// and prevent fraud.
 ///
 /// @namespace Articles
-/// @author Samchon
+/// @author Austinibele
 model bbs_article_comment_snapshots {
     //----
     // COLUMNS
@@ -348,7 +348,7 @@ model bbs_article_comment_snapshots {
 /// {@link attachment_files} tables.
 /// 
 /// @namespace Articles
-/// @author Samchon
+/// @author Austinibele
 model bbs_article_comment_snapshot_files {
     //----
     // COLUMNS
@@ -387,7 +387,7 @@ model bbs_article_comment_snapshot_files {
 }
 
 /// @hidden
-/// @author Samchon
+/// @author Austinibele
 model mv_bbs_article_last_snapshots {
     bbs_article_id          String @id @db.Uuid
     bbs_article_snapshot_id String @db.Uuid

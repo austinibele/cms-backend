@@ -3,7 +3,7 @@
  *
  * A diagnosis describing which error has been occured.
  *
- * @author Samchon
+ * @author Austinibele
  */
 export interface IDiagnosis {
   /**

@@ -7,7 +7,7 @@ import { Prisma, PrismaClient } from ".prisma/client";
 /**
  * Utility for database entity.
  *
- * @author Samchon
+ * @author Austinibele
  */
 export namespace EntityUtil {
   /**

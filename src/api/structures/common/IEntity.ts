@@ -5,7 +5,7 @@ import { tags } from "typia";
  *
  * Common entity definition for entities having UUID type primary key value.
  *
- * @author Samchon
+ * @author Austinibele
  */
 export interface IEntity {
   /**

@@ -5,7 +5,7 @@ Thanks for your advise. Before publishing an issue, please check some components
 ### 1. Search for duplicates
 Before publishing an issue, please check whether the duplicated issue exists or not.
 
-  - [Ordinary Issues](https://github.com/samchon/backend/issues)
+  - [Ordinary Issues](https://github.com/austinibele/cms-backend/issues)
 
 ### 2. Did you find a bug?
 When you reporting a bug, then please write about those items:
@@ -73,7 +73,7 @@ export async function test_bbs_customer_join_after_activate
         (
             connection,
             {
-                email: `${RandomGenerator.alphabets(16)}@samchon.org`,
+                email: `${RandomGenerator.alphabets(16)}@austinibele.org`,
                 password: Configuration.SYSTEM_PASSWORD(),
                 citizen: prepare_random_citizen()
             }
@@ -85,7 +85,7 @@ export async function test_bbs_customer_join_after_activate
     (
         connection,
         {
-            email: `${RandomGenerator.alphabets(16)}@samchon.org`,
+            email: `${RandomGenerator.alphabets(16)}@austinibele.org`,
             password: Configuration.SYSTEM_PASSWORD(),
             citizen: customer.citizen
         }
