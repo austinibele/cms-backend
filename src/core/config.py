@@ -5,10 +5,10 @@ class Settings(BaseSettings):
     # Supabase settings
     SUPABASE_URL: str = None
     SUPABASE_KEY: str = None
-    CORS_ORIGINS: str = "http://localhost:3000"
+    CORS_ORIGINS: str = "http://localhost:3000, http://localhost:3001"
 
     # Define other global settings here
-    APP_NAME: str = "Sigma Sensors UI"
+    APP_NAME: str = "CMS Backend"
     DEBUG: bool = False
 
     class Config:
