@@ -27,3 +27,9 @@ class WebsiteService:
     
     def write_theme(self, theme):
         write_json(os.path.join(self.database_dir, "website/global/theme.json"), theme)
+
+    def read_page(self, page_name):
+        return read_json(os.path.join(self.database_dir, f"website/pages/{page_name}/page.json"))
+    
+    def write_page(self, page_name, page):
+        write_json(os.path.join(self.database_dir, f"website/pages/{page_name}/page.json"), page)
