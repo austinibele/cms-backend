@@ -1,0 +1,45 @@
+{
+  "sections": [
+      {
+          "id": 1,
+          "__type": "hero",
+          "__component": "sections.hero",
+          "title": "Contact",
+          "description": "",
+          "primary_button": {
+              "text": ""
+          },
+          "secondary_button": {
+              "text": ""
+          },
+          "styles": {
+            "wrapper": {
+              "backgroundImage": "linear-gradient(#2ca8ae 41%, #0B4141 100%), url(/images/lab_background.webp)",
+              "backgroundSize": "cover",
+              "backgroundColor": "#87d6dc",
+              "backgroundBlendMode": "multiply",
+              "opacity": 0.88,
+              "height": "10vh",
+              "paddingTop": "5rem",
+              "paddingBottom": "9rem"
+            }
+          }
+      },
+      {
+        "id": 1,
+        "__type": "contact",
+        "__component": "sections.contact",
+        "title": "Contact Us",
+        "description": "Leave your email and we will get back to you shortly",
+        "showSocial": false,
+        "contactDetails": [
+            { "title": "Email", "description": "info@sigma-sensors.com", "icon": "at" },
+            { "title": "Phone", "description": "+49 (1520) 704 88 88", "icon": "phone" },
+            { "title": "Address", "description": "Maximilian-Haller-Straße 20, 72488 Sigmaringen, DE", "icon": "mapPin" },
+            { "title": "Working hours", "description": "9 a.m. – 5 p.m.", "icon": "sun" }
+        ],
+        "styles": {
+        }
+    }
+  ]
+}

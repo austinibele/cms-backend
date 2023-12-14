@@ -1,0 +1,75 @@
+{
+    "sections": [
+        {
+            "id": 1,
+            "__type": "hero",
+            "__component": "sections.hero",
+            "title": "Where Accuracy Meets Durability",
+            "description": "Serving the global semiconductor industry with ISO/IEC 17025:2017 accredited and ITS90 traceable calibration",
+            "primary_button": {
+                "text": "View Products",
+                "href": "/products"
+            },
+            "secondary_button": {
+                "text": "View Services",
+                "href": "/services"
+            },
+            "styles": {
+              "wrapper": {
+                "backgroundImage": "linear-gradient(#2ca8ae 41%, #0B4141 100%), url(/images/wafer_on_chuck_2.webp)",
+                "backgroundColor": "#87d6dc",
+                "backgroundBlendMode": "multiply",
+                "opacity": 0.88,
+                "height": "50vh",
+                "backgroundAttachment": "fixed",
+                "paddingTop": "7rem",
+                "paddingBottom": "10rem"
+              }
+            }
+          },
+          {
+            "id": 2,
+            "__type": "features",
+            "__component": "sections.features",
+            "heading": "What We Offer",
+            "title": "Temperature Measurement Solutions for Semiconductor Wafer Test",
+            "description": "Sigma Sensors provides the semiconductor industry with calibration solutions that ensure precision, accuracy, and compliance with international standards",
+            "features": [
+              {
+                "id": 1,
+                "__type": "feature",
+                "title": "Precision RTD Wafers",
+                "description": "The Cowboy Wafer by Sigma Sensors integrates with the prober and the controller to enable fully automated, operator-free calibration that is accredited by ISO/IEC 17025 and traceable to the international standard. Featuring low-noise, low-drift PT-1000 sensors, the Cowboy Wafer achieves sensor-to-sensor accuracy up to 0.03°C and absolute accuracy up to 0.1°C, and is available in 150mm, 200mm, and 300mm sizes with up to 24 sensors.",
+                "icon": "gauge"
+              },
+              {
+                "id": 2,
+                "__type": "feature",
+                "title": "On-site Prober Calibration",
+                "description": "Sigma Sensors offers on-site prober calibration services within the EU and USA using the Cowboy Wafer system. The Cowboy Wafer system holds an accredited ISO/IEC 17025 calibration with traceability to ITS-90, allowing you to document your compliance to international standards. Our technicians can calibrate multiple probers in parallel and can work around your schedule, allowing you to minimize tool down-time and task-switching within your engineering team.",
+                "icon": "user"
+              },
+              {
+                "id": 3,
+                "__type": "feature",
+                "title": "RTD Wafer Calibration",
+                "description": "Sigma Sensors can calibrate any RTD wafer, regardless of maker, from -60°C to +200°C. We offer fast turnaround times of less than 4 weeks on our ISO/IEC 17025 accredited calibration services. For each calibration performed, we issue a Calibration Certificate that complies with ISO/IEC 17025 guidelines and includes both temperature measurement data and standards used, so that you can demonstrate tracability to ITS-90.",
+                "icon": "cookie"
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "__type": "video",
+            "__component": "sections.video",
+            "heading": "Video",
+            "title": "View our promotional video",
+            "styles": {
+                "video": {
+                    "marginTop": "2rem",
+                    "marginBottom": "2rem"
+                }
+            }
+        }
+    ]
+}

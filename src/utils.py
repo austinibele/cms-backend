@@ -1,3 +1,4 @@
+import json
 import os
 from fastapi.responses import JSONResponse
 import traceback
@@ -24,3 +25,11 @@ def common_error_handler(service: str, e: Exception):
         status_code=400,
         content={"error": str(e)},
     )
+
+def read_json(file_path):
+    with open(file_path) as json_file:
+        return json.load(json_file)
+    
+def write_json(file_path, data):
+    with open(file_path, 'w') as outfile:
+        json.dump(data, outfile, indent=4)

@@ -1,0 +1,238 @@
+{
+    "sections": [
+        {
+            "id": 1,
+            "__type": "hero",
+            "__component": "sections.hero",
+            "title": "Products",
+            "description": "",
+            "primary_button": {
+                "text": ""
+            },
+            "secondary_button": {
+                "text": ""
+            },
+            "styles": {
+              "wrapper": {
+                "backgroundImage": "linear-gradient(#2ca8ae 41%, #0B4141 100%), url(/images/lab_background.webp)",
+                "backgroundSize": "cover",
+                "backgroundColor": "#87d6dc",
+                "backgroundBlendMode": "multiply",
+                "opacity": 0.88,
+                "height": "10vh",
+                "paddingTop": "5rem",
+                "paddingBottom": "9rem"
+              }
+            }
+        },
+        {
+            "id": 2,
+            "__type": "product",
+            "__component": "sections.product-image-right",
+            "title": "Sigma Sensors Cowboy Wafer 150/200/300mm",
+            "description": "Offering unmatched accuracy and reliability in thermal verification, our Cowboy line of RTD Wafers ensure accuracy and documentary traceability of your equipment without the hassle of extra holders or complex setups or manual documentation.",
+            "image": {
+                "src": "/images/cowboy_wafer.webp",
+                "alt": "Cowboy Wafer"
+            },
+            "list": [
+                {
+                    "title": "Universal Compatibility",
+                    "description": "designed for universal application across all 200 and 300 mm thermal chucks"
+                },
+                {
+                    "title": "Calibration Automation",
+                    "description":"compatible with leading wafer probers and chuck manufacturers including Accretech, ATT, ERS, MPI, Cascade, and more"
+                },
+                {
+                    "title": "Durable and Shatter-Free",
+                    "description": "a unique two-layer design increases durability and longevity, and makes handling eaiser"
+                }
+            ],
+            "styles": {
+                "inner": {
+                    "paddingTop": "4rem",
+                    "paddingBottom": "3rem"
+                },
+                "image": {
+                    "width": "400px",
+                    "height": "auto"
+                }
+            }
+        },
+        {
+            "id": 3,
+            "__type": "product",
+            "__component": "sections.product-image-left",
+            "title": "Calibration Automation",
+            "description": "The Cowboy Wafer system offers semi-automated and fully-automated Prober calibration protocols.",
+            "image": {
+                "src": "/images/auto_calibration_tool.webp",
+                "alt": "Cowboy Wafer"
+            },
+            "list": [
+                {
+                    "title": "Full-Automation",
+                    "description":"operator-free fully automated routine is available for newer MPI and Accretech Probers using newer ATT or ERS controllers"
+                },
+                {
+                    "title": "Semi-Automation",
+                    "description": "semi-automated routines consisting of automated temperature stepping with manual offset update available for all probers"
+                }
+            ],
+            "styles": {
+                "inner": {
+                    "paddingTop": "4rem",
+                    "paddingBottom": "3rem"
+                },
+                "image": {
+                    "width": "400px",
+                    "height": "auto"
+                }
+            }
+        },
+        {
+            "id": 4,
+            "__type": "product",
+            "__component": "sections.product-image-right",
+            "title": "Data Analysis and Data Export",
+            "description": "The Cowboy Wafer system offers multiple options for data visualization, export, and networking to meet your needs.",
+            "image": {
+                "src": "/images/data_visualizations.webp",
+                "alt": "Cowboy Wafer"
+            },
+            "list": [
+                {
+                    "title": "Data Visualization",
+                    "description": "temperature-time graphs and temperature-maps can be visualized in real-time or post-test"
+                },
+                {
+                    "title": "Performance Characterization",
+                    "description": "wafer temperature can be characterized by various metrics including mean, median, mode, standard-deviation, range"
+                },
+                {
+                    "title": "Data Export",
+                    "description":"data can be exported in multiple formats including CSV, XLSX, and JSON"
+                }
+            ],
+            "styles": {
+                "inner": {
+                    "paddingTop": "4rem",
+                    "paddingBottom": "3rem"
+                },
+                "image": {
+                    "width": "400px",
+                    "height": "auto"
+                }
+            }
+        },
+        {
+            "id": 5,
+            "__type": "features",
+            "__component": "sections.features",
+            "heading": "Accuracy Options",
+            "title": "",
+            "description": "Sigma Sensors offers different tiers of calibration and accuracy to help customers balance cost with their performance requirements.",
+            "features": [
+              {
+                "id": 1,
+                "__type": "feature",
+                "title": "Factory Spec",
+                "description": "Using high quality sensors and a proprietary calibration process, Sigma Sensors can offer a base sensor-to-sensor accuracy of ±0.1°C and an absolute accuracy of ±0.2°C. This is the most cost-effective option for customers who can tolerate a lower accuracy.",
+                "icon": "gauge"
+              },
+              {
+                "id": 2,
+                "__type": "feature",
+                "title": "Factory Calibration",
+                "description": "Increased accuracy is achieved using premium 4-wire PT-100 sensors and an extended calibration process. Sensor-to-sensor accuracy is ±0.05°C and absolute accuracy is ±0.1°C. This is the best option for customers who need a higher accuracy but do not require an ISO/IEC 17025 accredited calibration.",
+                "icon": "user"
+              },
+              {
+                "id": 3,
+                "__type": "feature",
+                "title": "Accredited Calibration",
+                "description": "The K2X calibration option is the highest accuracy option available and is also the only ISO/IEC 17025 accredited calibration option. Sensor-to-sensor accuracy is ±0.03°C and absolute accuracy is ±0.1°C. This is the best option for customers who require an ISO/IEC 17025 accredited calibration.",
+                "icon": "cookie"
+              }
+            ],
+            "styles": {
+                "containerSize": "md"
+            }
+        },
+        {
+            "id": 6,
+            "__type": "misc",
+            "__component": "sections.specifications",
+            "heading": "Specifications Summary",
+            "title": "",
+            "description": "Specification range for the Cowboy wafer series. Exact specifications depend on purchased configuration.",
+            "styles": {
+                "inner": {
+                    "paddingTop": "4rem",
+                    "paddingBottom": "3rem"
+                },
+                "tableContainer": {
+                    "display": "flex",
+                    "justifyContent": "center",
+                    "alignItems": "center",
+                    "marginTop": "2rem",
+                    "marginBottom": "2rem"
+                },
+                "table": {
+                    "width": "100%"
+                }
+            },
+            "tableData": {
+                "columns": [
+                    {
+                        "label": "Trait",
+                        "key": "trait"
+                      },
+                      {
+                        "label": "Spec",
+                        "key": "spec"
+                      }
+                ],
+                "rows": [
+                    {
+                      "trait": "Wafer Size",
+                      "spec": "150mm, 200mm, 300mm (+ more on request)"
+                    },
+                    {
+                      "trait": "Temperature Range",
+                      "spec": "-40℃ to +200℃ (-75℃ to + 300℃ on request)"
+                    },
+                    {
+                      "trait": "Sensor Accuracy",
+                      "spec": "Up to 0.03 K sensor-to-sensor, <0.1 K absolute (4-wire PT-100)"
+                    },
+                    {
+                      "trait": "Resolution",
+                      "spec": "0.01 K"
+                    },
+                    {
+                      "trait": "Number Channels",
+                      "spec": "1 - 24 channels"
+                    },
+                    {
+                      "trait": "Thickness",
+                      "spec": "< 4.5mm"
+                    },
+                    {
+                      "trait": "Hard-Shell Case Dimensions",
+                      "spec": "(200mm) 460 x 375 x 96mm, (300mm) 520 x 410 x 110mm"
+                    },
+                    {
+                      "trait": "Logger Dimensions",
+                      "spec": "(1-8ch) 128x133x56mm, (9-24ch) 188x133x56mm"
+                    },
+                    {
+                      "trait": "Operating System",
+                      "spec": "Linux / Windows 10, 11"
+                    }
+                  ]
+            }
+        }
+    ]
+}

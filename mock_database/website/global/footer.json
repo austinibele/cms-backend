@@ -1,0 +1,32 @@
+{
+    "logo": {
+        "src": "/images/sigma_sensors_logo.png",
+        "alt": "logo",
+        "width": 768,
+        "height": 326,
+        "scale": 0.13
+    },
+    "belowLogoText": "Where Accuracy Meets Durability",
+    "afterFooterText": "© 2023 Sigma Sensors. All rights reserved.",
+    "showSocial": false,
+    "groups": [
+        {
+          "title": "Products",
+          "links": [
+            { "text": "RTD Wafers", "url": "/products" }
+          ]
+        },
+        {
+          "title": "Services",
+          "links": [
+            { "text": "RTD Wafer Calibration", "url": "/services" },
+            { "text": "On-site Calibration", "url": "/services" }
+          ]
+        }
+      ],
+    "styles": {
+        "header": {
+            "marginBottom": "0rem"
+        }
+    }
+}

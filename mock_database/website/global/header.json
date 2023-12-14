@@ -1,0 +1,40 @@
+{
+    "logo": {
+        "src": "/images/sigma_sensors_logo.png",
+        "alt": "logo",
+        "width": 768,
+        "height": 326,
+        "scale": 0.13
+    },
+    "links": [
+        {
+            "id": 1,
+            "url": "/",
+            "newTab": false,
+            "text": "Home"
+        },
+        {
+            "id": 2,
+            "url": "/products",
+            "newTab": false,
+            "text": "Products"
+        },
+        {
+            "id": 3,
+            "url": "/services",
+            "newTab": false,
+            "text": "Services"
+        },
+        {
+            "id": 4,
+            "url": "/contact",
+            "newTab": false,
+            "text": "Contact"
+        }
+    ],
+    "styles": {
+        "header": {
+            "marginBottom": "0rem"
+        }
+    }
+}

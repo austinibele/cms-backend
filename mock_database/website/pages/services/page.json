@@ -1,0 +1,77 @@
+{
+    "sections": [
+        {
+            "id": 1,
+            "__type": "hero",
+            "__component": "sections.hero",
+            "title": "Services",
+            "description": "",
+            "primary_button": {
+                "text": ""
+            },
+            "secondary_button": {
+                "text": ""
+            },
+            "styles": {
+              "wrapper": {
+                "backgroundImage": "linear-gradient(#2ca8ae 41%, #0B4141 100%), url(/images/lab_background.webp)",
+                "backgroundSize": "cover",
+                "backgroundColor": "#87d6dc",
+                "backgroundBlendMode": "multiply",
+                "opacity": 0.88,
+                "height": "10vh",
+                "paddingTop": "5rem",
+                "paddingBottom": "9rem"
+              }
+            }
+        },
+        {
+            "id": 2,
+            "__type": "product",
+            "__component": "sections.product-image-left",
+            "title": "RTD Wafer Calibration",
+            "description": "Sigma Sensors offers accredited as well as traceable wafer calibration service for both our wafers (Sigma Sensors / TekSense) as well as 3rd party wafers such as KLA Tencor Sensarray.",
+            "image": {
+                "src": "/images/sigma_tolerances.webp",
+                "alt": "Sigma Sensors calibration tolerances"
+            },
+            "list": [
+        
+            ],
+            "styles": {
+            "inner": {
+                "paddingTop": "4rem",
+                "paddingBottom": "3rem"
+            },
+            "image": {
+                "width": "400px",
+                "height": "auto"
+            }
+          }
+        },
+        {
+            "id": 3,
+            "__type": "product",
+            "__component": "sections.product-image-right",
+            "title": "On-Site Calibration",
+            "description": "Sigma Sensors performs on-site Thermal Calibrations from -60 °C to +200 °C both ISO17025:2017 accredited as well as non-accredited, traceable. Both are offered in-person or remote onsite with our innovative Lab2Go Narrow Band Industrial IoT and/or web-based cloud server system, enabling remote monitoring, logging and automated issuance of calibration certificates.",
+            "image": {
+                "src": "/images/onsite_calibration.webp",
+                "alt": "Sigma Sensors calibration tolerances"
+            },
+            "list": [
+        
+            ],
+            "styles": {
+                "inner": {
+                    "paddingTop": "4rem",
+                    "paddingBottom": "3rem"
+                },
+                "image": {
+                    "width": "400px",
+                    "height": "auto"
+                }
+            }
+        }
+    ]
+}

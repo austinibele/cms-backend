@@ -2,7 +2,7 @@
 
 # /bin/test_mock.sh
 
-export USE_MOCK_SERVICES=true
+export DATABASE_DIR="mock_database"
 
 # The first argument ($1) is the directory to test. Default to "tests/" if not provided.
 DIR=${1:-tests/}
