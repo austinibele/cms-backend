@@ -1,4 +1,5 @@
 import os
+from fastapi import HTTPException
 from src.core.logger import get_logger
 from src.utils import read_json, write_json
 
@@ -9,27 +10,59 @@ class WebsiteService:
         if database_dir is None:
             database_dir = os.getenv("DATABASE_DIR")
         self.database_dir = database_dir
-        
+
     def read_footer(self):
-        return read_json(os.path.join(self.database_dir, "website/global/footer.json"))
+        try:
+            return read_json(os.path.join(self.database_dir, "website/global/footer.json"))
+        except FileNotFoundError:
+            raise HTTPException(status_code=404, detail="Footer not found.")
 
     def write_footer(self, footer):
-        write_json(os.path.join(self.database_dir, "website/global/footer.json"), footer)
+        try:
+            write_json(os.path.join(self.database_dir, "website/global/footer.json"), footer)
+            return True
+        except Exception as e:
+            logger.error(f"Failed to write footer: {e}")
+            raise HTTPException(status_code=500, detail="Internal server error.")
 
     def read_header(self):
-        return read_json(os.path.join(self.database_dir, "website/global/header.json"))
-    
+        try:
+            return read_json(os.path.join(self.database_dir, "website/global/header.json"))
+        except FileNotFoundError:
+            raise HTTPException(status_code=404, detail="Header not found.")
+
     def write_header(self, header):
-        write_json(os.path.join(self.database_dir, "website/global/header.json"), header)
-        
+        try:
+            write_json(os.path.join(self.database_dir, "website/global/header.json"), header)
+            return True
+        except Exception as e:
+            logger.error(f"Failed to write header: {e}")
+            raise HTTPException(status_code=500, detail="Internal server error.")
+
     def read_theme(self):
-        return read_json(os.path.join(self.database_dir, "website/global/theme.json"))
-    
+        try:
+            return read_json(os.path.join(self.database_dir, "website/global/theme.json"))
+        except FileNotFoundError:
+            raise HTTPException(status_code=404, detail="Theme not found.")
+
     def write_theme(self, theme):
-        write_json(os.path.join(self.database_dir, "website/global/theme.json"), theme)
+        try:
+            write_json(os.path.join(self.database_dir, "website/global/theme.json"), theme)
+            return True
+        except Exception as e:
+            logger.error(f"Failed to write theme: {e}")
+            raise HTTPException(status_code=500, detail="Internal server error.")
 
     def read_page(self, page_name):
-        return read_json(os.path.join(self.database_dir, f"website/pages/{page_name}/page.json"))
-    
+        try:
+            return read_json(os.path.join(self.database_dir, f"website/pages/{page_name}/page.json"))
+        except FileNotFoundError:
+            raise HTTPException(status_code=404, detail="Page not found.")
+
     def write_page(self, page_name, page):
-        write_json(os.path.join(self.database_dir, f"website/pages/{page_name}/page.json"), page)
+        try:
+            write_json(os.path.join(self.database_dir, f"website/pages/{page_name}/page.json"), page)
+            return True
+        except Exception as e:
+            logger.error(f"Failed to write page: {e}")
+            raise HTTPException(status_code=500, detail="Internal server error.")
