@@ -14,17 +14,15 @@
                 "text": "View Services",
                 "href": "/services"
             },
-            "styles": {
-              "wrapper": {
-                "backgroundImage": "linear-gradient(#2ca8ae 41%, #0B4141 100%), url(/images/wafer_on_chuck_2.webp)",
-                "backgroundColor": "#87d6dc",
-                "backgroundBlendMode": "multiply",
-                "opacity": 0.88,
-                "height": "50vh",
-                "backgroundAttachment": "fixed",
-                "paddingTop": "7rem",
-                "paddingBottom": "10rem"
-              }
+            "wrapper": {
+              "backgroundImage": "linear-gradient(#2ca8ae 41%, #0B4141 100%), url(/images/wafer_on_chuck_2.webp)",
+              "backgroundColor": "#87d6dc",
+              "backgroundBlendMode": "multiply",
+              "opacity": 0.88,
+              "height": "50vh",
+              "backgroundAttachment": "fixed",
+              "paddingTop": "7rem",
+              "paddingBottom": "10rem"
             }
           },
           {
@@ -64,7 +62,7 @@
             "__component": "sections.video",
             "heading": "Video",
             "title": "View our promotional video",
-            "styles": {
+            "style": {
                 "video": {
                     "marginTop": "2rem",
                     "marginBottom": "2rem"

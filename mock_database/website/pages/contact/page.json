@@ -12,17 +12,15 @@
           "secondary_button": {
               "text": ""
           },
-          "styles": {
-            "wrapper": {
-              "backgroundImage": "linear-gradient(#2ca8ae 41%, #0B4141 100%), url(/images/lab_background.webp)",
-              "backgroundSize": "cover",
-              "backgroundColor": "#87d6dc",
-              "backgroundBlendMode": "multiply",
-              "opacity": 0.88,
-              "height": "10vh",
-              "paddingTop": "5rem",
-              "paddingBottom": "9rem"
-            }
+          "wrapper": {
+            "backgroundImage": "linear-gradient(#2ca8ae 41%, #0B4141 100%), url(/images/lab_background.webp)",
+            "backgroundSize": "cover",
+            "backgroundColor": "#87d6dc",
+            "backgroundBlendMode": "multiply",
+            "opacity": 0.88,
+            "height": "10vh",
+            "paddingTop": "5rem",
+            "paddingBottom": "9rem"
           }
       },
       {
@@ -38,7 +36,7 @@
             { "title": "Address", "description": "Maximilian-Haller-Straße 20, 72488 Sigmaringen, DE", "icon": "mapPin" },
             { "title": "Working hours", "description": "9 a.m. – 5 p.m.", "icon": "sun" }
         ],
-        "styles": {
+        "style": {
         }
     }
   ]

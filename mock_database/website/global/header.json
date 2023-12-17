@@ -32,7 +32,7 @@
             "text": "Contact"
         }
     ],
-    "styles": {
+    "style": {
         "header": {
             "marginBottom": "0rem"
         }

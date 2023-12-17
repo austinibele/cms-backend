@@ -12,8 +12,7 @@
             "secondary_button": {
                 "text": ""
             },
-            "styles": {
-              "wrapper": {
+            "wrapper": {
                 "backgroundImage": "linear-gradient(#2ca8ae 41%, #0B4141 100%), url(/images/lab_background.webp)",
                 "backgroundSize": "cover",
                 "backgroundColor": "#87d6dc",
@@ -22,7 +21,6 @@
                 "height": "10vh",
                 "paddingTop": "5rem",
                 "paddingBottom": "9rem"
-              }
             }
         },
         {
@@ -49,7 +47,7 @@
                     "description": "a unique two-layer design increases durability and longevity, and makes handling eaiser"
                 }
             ],
-            "styles": {
+            "style": {
                 "inner": {
                     "paddingTop": "4rem",
                     "paddingBottom": "3rem"
@@ -80,7 +78,7 @@
                     "description": "semi-automated routines consisting of automated temperature stepping with manual offset update available for all probers"
                 }
             ],
-            "styles": {
+            "style": {
                 "inner": {
                     "paddingTop": "4rem",
                     "paddingBottom": "3rem"
@@ -115,7 +113,7 @@
                     "description":"data can be exported in multiple formats including CSV, XLSX, and JSON"
                 }
             ],
-            "styles": {
+            "style": {
                 "inner": {
                     "paddingTop": "4rem",
                     "paddingBottom": "3rem"
@@ -156,7 +154,7 @@
                 "icon": "cookie"
               }
             ],
-            "styles": {
+            "style": {
                 "containerSize": "md"
             }
         },
@@ -167,7 +165,7 @@
             "heading": "Specifications Summary",
             "title": "",
             "description": "Specification range for the Cowboy wafer series. Exact specifications depend on purchased configuration.",
-            "styles": {
+            "style": {
                 "inner": {
                     "paddingTop": "4rem",
                     "paddingBottom": "3rem"

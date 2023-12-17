@@ -12,8 +12,7 @@
             "secondary_button": {
                 "text": ""
             },
-            "styles": {
-              "wrapper": {
+            "wrapper": {
                 "backgroundImage": "linear-gradient(#2ca8ae 41%, #0B4141 100%), url(/images/lab_background.webp)",
                 "backgroundSize": "cover",
                 "backgroundColor": "#87d6dc",
@@ -22,7 +21,6 @@
                 "height": "10vh",
                 "paddingTop": "5rem",
                 "paddingBottom": "9rem"
-              }
             }
         },
         {
@@ -38,7 +36,7 @@
             "list": [
         
             ],
-            "styles": {
+            "style": {
             "inner": {
                 "paddingTop": "4rem",
                 "paddingBottom": "3rem"
@@ -62,7 +60,7 @@
             "list": [
         
             ],
-            "styles": {
+            "style": {
                 "inner": {
                     "paddingTop": "4rem",
                     "paddingBottom": "3rem"
