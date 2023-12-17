@@ -3,7 +3,7 @@
         {
             "id": 1,
             "__type": "hero",
-            "__component": "sections.hero",
+            "__component": "sections.HeroImageBackground",
             "title": "Where Accuracy Meets Durability",
             "description": "Serving the global semiconductor industry with ISO/IEC 17025:2017 accredited and ITS90 traceable calibration",
             "primary_button": {
@@ -28,7 +28,7 @@
           {
             "id": 2,
             "__type": "features",
-            "__component": "sections.features",
+            "__component": "sections.FeaturesCards",
             "heading": "What We Offer",
             "title": "Temperature Measurement Solutions for Semiconductor Wafer Test",
             "description": "Sigma Sensors provides the semiconductor industry with calibration solutions that ensure precision, accuracy, and compliance with international standards",
@@ -59,7 +59,7 @@
           {
             "id": 2,
             "__type": "video",
-            "__component": "sections.video",
+            "__component": "sections.VideoSection",
             "heading": "Video",
             "title": "View our promotional video",
             "style": {

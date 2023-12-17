@@ -3,7 +3,7 @@
         {
             "id": 1,
             "__type": "hero",
-            "__component": "sections.hero",
+            "__component": "sections.HeroImageBackground",
             "title": "Products",
             "description": "",
             "primary_button": {
@@ -26,7 +26,7 @@
         {
             "id": 2,
             "__type": "product",
-            "__component": "sections.product-image-right",
+            "__component": "sections.ImageRightBullets",
             "title": "Sigma Sensors Cowboy Wafer 150/200/300mm",
             "description": "Offering unmatched accuracy and reliability in thermal verification, our Cowboy line of RTD Wafers ensure accuracy and documentary traceability of your equipment without the hassle of extra holders or complex setups or manual documentation.",
             "image": {
@@ -61,7 +61,7 @@
         {
             "id": 3,
             "__type": "product",
-            "__component": "sections.product-image-left",
+            "__component": "sections.ImageLeftBullets",
             "title": "Calibration Automation",
             "description": "The Cowboy Wafer system offers semi-automated and fully-automated Prober calibration protocols.",
             "image": {
@@ -92,7 +92,7 @@
         {
             "id": 4,
             "__type": "product",
-            "__component": "sections.product-image-right",
+            "__component": "sections.ImageRightBullets",
             "title": "Data Analysis and Data Export",
             "description": "The Cowboy Wafer system offers multiple options for data visualization, export, and networking to meet your needs.",
             "image": {
@@ -127,7 +127,7 @@
         {
             "id": 5,
             "__type": "features",
-            "__component": "sections.features",
+            "__component": "sections.FeaturesCards",
             "heading": "Accuracy Options",
             "title": "",
             "description": "Sigma Sensors offers different tiers of calibration and accuracy to help customers balance cost with their performance requirements.",
@@ -161,7 +161,7 @@
         {
             "id": 6,
             "__type": "misc",
-            "__component": "sections.specifications",
+            "__component": "sections.Specifications",
             "heading": "Specifications Summary",
             "title": "",
             "description": "Specification range for the Cowboy wafer series. Exact specifications depend on purchased configuration.",

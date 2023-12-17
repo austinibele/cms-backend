@@ -3,7 +3,7 @@
         {
             "id": 1,
             "__type": "hero",
-            "__component": "sections.hero",
+            "__component": "sections.HeroImageBackground",
             "title": "Services",
             "description": "",
             "primary_button": {
@@ -26,7 +26,7 @@
         {
             "id": 2,
             "__type": "product",
-            "__component": "sections.product-image-left",
+            "__component": "sections.ImageLeftBullets",
             "title": "RTD Wafer Calibration",
             "description": "Sigma Sensors offers accredited as well as traceable wafer calibration service for both our wafers (Sigma Sensors / TekSense) as well as 3rd party wafers such as KLA Tencor Sensarray.",
             "image": {
@@ -50,7 +50,7 @@
         {
             "id": 3,
             "__type": "product",
-            "__component": "sections.product-image-right",
+            "__component": "sections.ImageRightBullets",
             "title": "On-Site Calibration",
             "description": "Sigma Sensors performs on-site Thermal Calibrations from -60 °C to +200 °C both ISO17025:2017 accredited as well as non-accredited, traceable. Both are offered in-person or remote onsite with our innovative Lab2Go Narrow Band Industrial IoT and/or web-based cloud server system, enabling remote monitoring, logging and automated issuance of calibration certificates.",
             "image": {
