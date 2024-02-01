@@ -4,7 +4,7 @@ from src.services.website_service import WebsiteService
 router = APIRouter()
 website_service = WebsiteService()
 
-@router.get("/website/footer", status_code=200, operation_id="read_footer")
+@router.get("/footer", status_code=200, operation_id="read_footer")
 async def read_footer():
     try:
         footer = website_service.read_footer()
@@ -12,7 +12,7 @@ async def read_footer():
     except HTTPException as e:
         raise e
 
-@router.put("/website/footer", status_code=200, operation_id="write_footer")
+@router.put("/footer", status_code=200, operation_id="write_footer")
 async def write_footer(footer: dict = Body(...)):
     try:
         website_service.write_footer(footer)
@@ -20,7 +20,7 @@ async def write_footer(footer: dict = Body(...)):
     except HTTPException as e:
         raise e
 
-@router.get("/website/header", status_code=200, operation_id="read_header")
+@router.get("/header", status_code=200, operation_id="read_header")
 async def read_header():
     try:
         header = website_service.read_header()
@@ -28,7 +28,7 @@ async def read_header():
     except HTTPException as e:
         raise e
 
-@router.put("/website/header", status_code=200, operation_id="write_header")
+@router.put("/header", status_code=200, operation_id="write_header")
 async def write_header(header: dict = Body(...)):
     try:
         website_service.write_header(header)
@@ -36,7 +36,7 @@ async def write_header(header: dict = Body(...)):
     except HTTPException as e:
         raise e
 
-@router.get("/website/theme", status_code=200, operation_id="read_theme")
+@router.get("/theme", status_code=200, operation_id="read_theme")
 async def read_theme():
     try:
         theme = website_service.read_theme()
@@ -44,7 +44,7 @@ async def read_theme():
     except HTTPException as e:
         raise e
 
-@router.put("/website/theme", status_code=200, operation_id="write_theme")
+@router.put("/theme", status_code=200, operation_id="write_theme")
 async def write_theme(theme: dict = Body(...)):
     try:
         website_service.write_theme(theme)
@@ -52,7 +52,7 @@ async def write_theme(theme: dict = Body(...)):
     except HTTPException as e:
         raise e
 
-@router.get("/website/pages/{page_name}", status_code=200, operation_id="read_page")
+@router.get("/pages/{page_name}", status_code=200, operation_id="read_page")
 async def read_page(page_name: str):
     try:
         page = website_service.read_page(page_name)
@@ -60,7 +60,7 @@ async def read_page(page_name: str):
     except HTTPException as e:
         raise e
 
-@router.put("/website/pages/{page_name}", status_code=200, operation_id="write_page")
+@router.put("/pages/{page_name}", status_code=200, operation_id="write_page")
 async def write_page(page_name: str, page: dict = Body(...)):
     try:
         website_service.write_page(page_name, page)
