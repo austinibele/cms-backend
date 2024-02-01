@@ -8,7 +8,7 @@ content_service = ContentService()
 async def get_slugs():
     try:
         slugs = content_service.get_slugs()
-        return {"success": True, "slugs": slugs}
+        return {"success": True, "data": slugs}
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
@@ -28,11 +28,19 @@ async def delete_slug(slug: str):
     except HTTPException as e:
         raise e
 
+@router.get("/content/{slug}", status_code=200, operation_id="get_content_files")
+async def get_content_files(slug: str):
+    try:
+        content_files = content_service.get_content_files(slug)
+        return {"success": True, "data": content_files}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
 @router.get("/content/{slug}/{filename}", status_code=200, operation_id="read_content")
 async def read_content(slug: str, filename: str):
     try:
         content = content_service.read_content_file(slug, filename)
-        return {"success": True, "content": content}
+        return {"success": True, "data": content}
     except FileNotFoundError:
         raise HTTPException(status_code=404, detail="Content file not found.")
     except Exception as e:

@@ -8,7 +8,7 @@ website_service = WebsiteService()
 async def read_footer():
     try:
         footer = website_service.read_footer()
-        return {"success": True, "footer": footer}
+        return {"success": True, "data": footer}
     except HTTPException as e:
         raise e
 
@@ -24,7 +24,7 @@ async def write_footer(footer: dict = Body(...)):
 async def read_header():
     try:
         header = website_service.read_header()
-        return {"success": True, "header": header}
+        return {"success": True, "data": header}
     except HTTPException as e:
         raise e
 
@@ -40,7 +40,7 @@ async def write_header(header: dict = Body(...)):
 async def read_theme():
     try:
         theme = website_service.read_theme()
-        return {"success": True, "theme": theme}
+        return {"success": True, "data": theme}
     except HTTPException as e:
         raise e
 
@@ -56,7 +56,7 @@ async def write_theme(theme: dict = Body(...)):
 async def read_page(page_name: str):
     try:
         page = website_service.read_page(page_name)
-        return {"success": True, "page": page}
+        return {"success": True, "data": page}
     except HTTPException as e:
         raise e
 

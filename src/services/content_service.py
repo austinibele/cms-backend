@@ -28,6 +28,9 @@ class ContentService:
             raise HTTPException(status_code=404, detail="Slug not found.")
         shutil.rmtree(slug_path)
         return True
+    
+    def get_content_files(self, slug):
+        return os.listdir(os.path.join(self.database_dir, f"content/{slug}"))
 
     def read_content_file(self, slug, filename):
         return read_json(os.path.join(self.database_dir, f"content/{slug}/{filename}.json"))
