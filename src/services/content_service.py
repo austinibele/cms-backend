@@ -30,7 +30,8 @@ class ContentService:
         return True
     
     def get_content_files(self, slug):
-        return os.listdir(os.path.join(self.database_dir, f"content/{slug}"))
+        content_files = os.listdir(os.path.join(self.database_dir, f"content/{slug}"))
+        return [file.split(".")[0] for file in content_files]
 
     def read_content_file(self, slug, filename):
         return read_json(os.path.join(self.database_dir, f"content/{slug}/{filename}.json"))
