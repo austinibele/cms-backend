@@ -2,9 +2,6 @@
 from pydantic import BaseSettings
 
 class Settings(BaseSettings):
-    # Supabase settings
-    SUPABASE_URL: str = None
-    SUPABASE_KEY: str = None
     CORS_ORIGINS: str = "http://localhost:3000, http://localhost:3001"
 
     # Define other global settings here
