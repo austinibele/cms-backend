@@ -9,6 +9,7 @@ from src.core.security import setup_cors
 from src.routers.content_router import router as content_router
 from src.routers.website_router import router as website_router
 from src.routers.media_router import router as media_router
+from src.routers.auth_router import router as auth_router
 
 logging.basicConfig(level=logging.WARN)
 logger = logging.getLogger(__name__)
@@ -18,6 +19,7 @@ app = FastAPI()
 app.include_router(website_router, prefix="/api/website", tags=["website"])
 app.include_router(content_router, prefix="/api/content", tags=["content"])
 app.include_router(media_router, prefix="/api/media", tags=["media"])
+app.include_router(auth_router, prefix="/api/auth", tags=["auth"])
 
 @app.exception_handler(RequestValidationError)
 async def validation_exception_handler(request: Request, exc: RequestValidationError):
