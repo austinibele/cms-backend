@@ -54,4 +54,3 @@ class ContentService:
         except Exception as e:
             logger.error(f"Failed to delete content file: {e}")
             raise HTTPException(status_code=500, detail="Internal server error.")
-
