@@ -4,10 +4,9 @@ from fastapi import HTTPException
 
 @pytest.fixture
 def content_service():
-    return ContentService()
+    return ContentService("mock_database")
 
-def test_get_slugs():
-    content_service = ContentService()
+def test_get_slugs(content_service):
     slugs = content_service.get_slugs()
     assert isinstance(slugs, list)
     assert "blog" in slugs
