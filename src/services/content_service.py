@@ -1,4 +1,6 @@
 import os
+from collections import OrderedDict
+from datetime import datetime
 import shutil
 from src.core.logger import get_logger
 from src.utils import read_json, write_json
@@ -31,8 +33,26 @@ class ContentService:
         return True
     
     def get_content_files(self, slug):
-        content_files = os.listdir(os.path.join(self.database_dir, self.content_dir, f"{slug}"))
-        return [file.split(".")[0] for file in content_files]
+        content_dir_path = os.path.join(self.database_dir, self.content_dir, f"{slug}")
+        content_files = os.listdir(content_dir_path)
+
+        # A list to store dictionaries with file name and its modification time
+        file_info_list = []
+        
+        for file in content_files:
+            file_path = os.path.join(content_dir_path, file)
+            # Using os.path.getmtime to get last modification time of the file
+            mod_time = os.path.getmtime(file_path)
+            mod_time_datetime = datetime.fromtimestamp(mod_time)
+            mod_time_str = mod_time_datetime.strftime('%Y-%m-%d %H:%M')
+            # Storing modification time and filename (without extension) in the list as dictionaries
+            file_info_list.append({"name": file.split('.')[0], "modifiedTime": mod_time_str, "modifiedTimestamp": mod_time})
+        
+        # Sorting the list by modification timestamp in descending order (newest first)
+        file_info_list_sorted = sorted(file_info_list, key=lambda x: x["modifiedTimestamp"], reverse=True)
+        
+        ordered_files_dict = OrderedDict((item['name'], item) for item in file_info_list_sorted)
+        return ordered_files_dict
 
     def read_content_file(self, slug, filename):
         return read_json(os.path.join(self.database_dir, self.content_dir, f"{slug}/{filename}.json"))

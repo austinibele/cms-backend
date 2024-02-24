@@ -32,4 +32,4 @@ def read_json(file_path):
     
 def write_json(file_path, data):
     with open(file_path, 'w') as outfile:
-        json.dump(data, outfile, indent=4)
+        json.dump(data, outfile, indent=4, ensure_ascii=False)
