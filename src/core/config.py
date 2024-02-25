@@ -16,8 +16,8 @@ class Settings(BaseSettings):
     # Undefined here but defined in .env
     JWT_SECRET_KEY: str
     NODE_ENV: str
-    EDITOR_PATH: str
-    SERVER_URL: str
+    NEXT_PUBLIC_EDITOR_PATH: str
+    NEXT_PUBLIC_SERVER_URL: str
 
     class Config:
         env_file = os.path.join(os.path.dirname(__file__)).replace("cms-backend/src/core", ".env")
