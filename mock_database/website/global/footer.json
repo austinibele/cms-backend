@@ -24,7 +24,7 @@
           ]
         }
       ],
-    "style": {
+    "styles": {
         "header": {
             "marginBottom": "0rem"
         }

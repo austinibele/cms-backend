@@ -61,7 +61,7 @@
           "__component": "sections.VideoSection",
           "heading": "Video",
           "title": "View our promotional video",
-          "style": {
+          "styles": {
               "video": {
                   "marginTop": "2rem",
                   "marginBottom": "2rem"

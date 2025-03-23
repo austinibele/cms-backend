@@ -36,7 +36,7 @@
             { "title": "Address", "description": "Maximilian-Haller-Straße 20, 72488 Sigmaringen, DE", "icon": "mapPin" },
             { "title": "Working hours", "description": "9 a.m. – 5 p.m.", "icon": "sun" }
         ],
-        "style": {
+        "styles": {
         }
     }
   ]

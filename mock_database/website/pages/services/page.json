@@ -36,7 +36,7 @@
             "list": [
         
             ],
-            "style": {
+            "styles": {
             "inner": {
                 "paddingTop": "4rem",
                 "paddingBottom": "3rem"
@@ -60,7 +60,7 @@
             "list": [
         
             ],
-            "style": {
+            "styles": {
                 "inner": {
                     "paddingTop": "4rem",
                     "paddingBottom": "3rem"
